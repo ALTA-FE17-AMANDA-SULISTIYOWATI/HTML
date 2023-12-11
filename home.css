@@ -107,3 +107,23 @@ nav ul li a:hover {
     font-size: 30px;
   }
 }
+.icon {
+  font-size: 30px;
+  display: none;
+}
+@media only screen and (max-width: 768px) {
+  nav {
+    flex-wrap: wrap;
+  }
+  nav ul {
+    flex-direction: column;
+    width: 100%;
+  }
+  nav ul.hidden {
+    display: none;
+  }
+  .icon {
+    display: flex;
+    align-items: center;
+  }
+}
